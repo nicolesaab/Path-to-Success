@@ -1,0 +1,183 @@
+/* -------------------- CSS BY NAME -------------------------------------- */
+/* -------------------- IMPORTED FONTS -------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+/*-------------------- CSS REST ---------------------------------------------------*/
+/* -------------------- ROOT VARIABLES --------------------------------------- */
+:root {
+    --teal :#4CA7C0;
+    --purple: #484FB7;
+    --lavender: #6B8FE7;
+    --yellow: #E9BB57; 
+    --pink:#D9526F;
+    --dark-gray:#1E1E1E; 
+    --white:#ffffff; 
+
+}
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-width: 450px;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--purple);
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--lavender);
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    text-align: center;
+    z-index: 10;
+    grid: 0;
+}
+header h1 {
+    font-family: 'Kavoon', sans-serif;
+    font-size: 3em;
+    color: var(--white);
+}
+header p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25em;
+    background-color: var(--pink);
+    color: var(--white);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    margin-top: 0;
+}
+nav {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+.menu-btn {
+    font-size: 1.5em;
+    font-family: 'Kavoon', sans-serif;
+    color: var(--dark-gray);
+    background-color: var(--yellow);
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-radius: 10px 0 0px 0px;
+}
+.menu-btn:hover {
+    color: var(--white);
+}
+.menu {
+    display: none;
+    list-style: none;
+    background-color: var(--purple);
+    margin-top: 0.5rem;
+    border-radius: 8px;
+}
+nav ul li {
+    margin: 0.5rem 0;
+}
+h1, h2 {
+    font-family: 'Kavoon', cursive;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    margin: 10px;
+    font-size: 2em;
+    color: var(--white);
+}
+nav h2{
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.5em;
+    color: var(--yellow);
+    font-family: 'Inter', sans-serif;
+}
+h4 {
+    font-size: 1.15em;
+    color: var(--purple);
+    font-family: 'Inter', sans-serif;
+}
+.services {
+    margin: 4rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+.service-card {
+    background-color: var(--white);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+.why-choose-use {
+    background-color: var(--pink);
+    padding: 3rem 1rem;
+    display: grid;
+}
+.personalized {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    background-color: var(--teal);
+}
+.results {
+    background-color: var(--lavender);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+.environment {
+    background-color: var(--yellow);
+}
+.flexible {
+    background-color: var(--white);
+}
+.pricing {
+    margin: 4rem 1rem;
+}
+table {
+    width: auto;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    background-color: var(--white);
+    border: 1px solid var(--yellow);
+}
+thead {
+    background-color: var(--yellow);
+}
+thead th {
+    font-family: 'Inter', sans-serif;
+    color: var(--dark-gray);
+    padding: 0.8rem 1.2rem;
+    text-align: center;
+}
+tbody td {
+    padding: 1rem 1.2rem;
+    border-top: 3px solid var(--yellow);
+    border-right: 3px solid var(--yellow);
+}
+.first-step {
+    background-color: var(--pink);
+}
+footer {
+    background-color: var(--lavender);
+    color: var(--white);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+}
+/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+/*-------------------- MEDIA QUERY (large) ------------------------------------*/
+/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
